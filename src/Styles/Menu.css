@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+.menu-block1-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 8rem;
+    background-color: var(--background-blue);
+    overflow: hidden;
+}
+
+.menu-block1-img img {
+    width: auto;
+    max-width: 100%;
+    height: 30rem;
+}
+
+.menu-block2-filtre {
+    width: 100%;
+    height: 20rem;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block2-filtre {
+    width: 50rem;
+    height: 120px;
+    background-color: var(--mirror);
+    border-radius: 38px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block2-filtre-1 {
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.block2-filtre-2 {
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--light);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.block2-filtre-2 p:hover {
+    color: var(--orange-hover);
+    cursor: pointer;
+}
+
+.block2-filtre-1 p:hover {
+    color: var(--orange-hover);
+    cursor: pointer;
+}
+
+.activefiltre {
+    color: var(--orange-hover);
+}
+
+
+.menu-block3 {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+
+.menu-block3-h1-desc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5rem;
+
+}
+
+.menu-block3-h1-desc h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.menu-block3 img {
+    width: auto;
+    height: 45rem;
+
+}
+
+.menu-block3-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-block3-img-text {
+    display: flex;
+    gap: 8rem;
+    flex-wrap: wrap;
+}
+
+.menu-block3-text1 {
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--light);
+}
+
+.menu-block3-text2 {
+    font-family: "Montagu Slab";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.menu-block3-text1-prix {
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--orange-hover);
+}
+
+.menu-block3-text {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    justify-content: center;
+}
+
+
+@media screen and (max-width: 901px) {
+    .menu-block3-img-text {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .menu-block3-img-text {
+        display: flex;
+        justify-content: center;
+    }
+    .block2-filtre{
+        width: 40rem;
+        height: 8rem;
+    }
+    .block2-filtre-1{
+        display: flex;
+        justify-content: center;
+        gap: 0.6rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block2-filtre{
+        width: 30rem;
+        height: 8rem;
+    }
+    .block2-filtre-1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0rem;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .block2-filtre-2{
+        gap: 1rem;
+    }
+    .menu-block1-img img{
+        width: 20rem;
+        height: auto;
+    }
+}

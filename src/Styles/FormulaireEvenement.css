@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+
+
+.event-content {
+    width: 92%;
+    height: 92%;
+    border: 1px solid var(--orange-hover);
+    border-radius: 30px;
+    margin-top: 10%;
+}
+
+.form-event {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.Form-event-ligne1 {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    border-radius: 8px;
+    margin-top: 10%;
+    color: var(--light);
+    justify-content: space-between;
+}
+
+.Form-event-ligne1 input {
+    height: 30px;
+    border-radius: 8px;
+    width: 40%;
+}
+
+.form-event input::placeholder {
+    color: var(--background-blue);
+    font-family: 'Montagu Slab', sans-serif;
+}
+
+.form-event textarea::placeholder {
+    color: var(--background-blue);
+    font-family: 'Montagu Slab', sans-serif;
+}
+
+
+.Form-event-message textarea {
+    width: 100%;
+    height: 8rem;
+    margin-top: 5%;
+    border-radius: 8px;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 10rem;
+}
+
+.Form-event-heure{
+    margin-top: 5%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 5px;
+    border-radius: 8px;
+}
+
+.Form-event-heure input{
+    border-radius: 8px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Form-event-heure input:first-child{
+    margin-right: auto;
+}
+
+.Form-send-button{
+    margin-top: 5%;
+    margin: 5% auto;
+    border-radius: 50px;
+    width: 8rem;
+    height: 40px;
+    background: var(--default);
+    color: var(--light);
+    font-family: "Montagu Slab";
+    font-weight: 400;
+}
+
+.Form-send-button:hover{
+    background: var(--orange-hover);
+    cursor: pointer;
+}
+
+.form-event .numero-tel-form{
+    margin-top: 5%;
+    height: 30px;
+    border-radius: 8px;
+}
+
+.form-event .pers-form{
+    width: 23%;
+    text-align: center;
+}

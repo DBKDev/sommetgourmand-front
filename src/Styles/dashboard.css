@@ -1,0 +1,102 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --button-active: #0B2239;
+}
+
+body{
+    background-color: var(--background-dahsboard);
+}
+
+
+.active>button {
+    background-color: var(--button-active);
+    border-radius: 8px;
+    color: #fff !important;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-left: 3rem;
+    justify-content: center;
+    height: 40vh;
+    width: 12rem;
+    float: left;
+}
+
+.sb-evenement {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 3rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.sb-menu {
+    font-size: 1.2rem;
+    display: flex;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 3rem;
+    gap: 2rem;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px 20px;
+    background-color: transparent;
+    width: 100%;
+}
+
+.sb-reservation {
+    font-size: 1.2rem;
+    display: flex;
+    gap: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+    height: 3rem;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: transparent;
+}
+
+.sb-img {
+    width: 10rem;
+    position: relative;
+    right: 5rem;
+}
+
+/* .sb-evenement:hover {
+    color: #fff;
+    background-color: var(--button-active);
+    border-radius: 8px;
+}
+.sidebar .sb-menu:hover{
+    color: #fff;
+    background-color: var(--button-active);
+    border-radius: 8px;
+}
+ .sb-reservation:hover{
+    color: #fff;
+    background-color: var(--button-active);
+    border-radius: 8px;
+}
+ */

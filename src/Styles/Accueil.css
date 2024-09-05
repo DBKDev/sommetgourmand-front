@@ -1,0 +1,1221 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+.Page-Accueil {
+    background: #02060B;
+    height: auto;
+}
+
+.Header-contenu {
+    display: flex;
+    flex-direction: row;
+}
+
+.hd-img {
+    position: relative;
+    bottom: 8.5rem;
+    right: 3rem;
+    width: auto;
+    max-width: 100%;
+    height: 60rem;
+    transform: scale(1.2);
+    z-index: 1;
+}
+
+.Header-blur {
+    position: absolute;
+    left: 70rem;
+    width: 49.5rem;
+    height: 60rem;
+    /* background: var(--default); */
+    background: rgba(11, 28, 44, 0.25);
+    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12);
+    backdrop-filter: blur(20px);
+    z-index: 2;
+}
+
+.Header-blur-h1-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Header-blur h1 {
+    display: flex;
+    color: var(--light);
+    text-align: center;
+    font-family: Philosopher;
+    font-size: 110px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 25%;
+}
+
+.Header-blur p {
+    color: var(--light);
+    font-family: "Montagu Slab";
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 5%;
+}
+
+.Header-blur-boutons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 6%;
+    margin-left: 9rem;
+    gap: 2rem;
+}
+
+.Header-blur-Menu {
+    width: 150px;
+    height: 50px;
+    border-radius: 12px;
+    background-color: var(--default);
+    color: var(--light);
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Header-blur-Reserver {
+    height: 50px;
+    width: 271px;
+    border-radius: 12px;
+    border: 2px solid var(--orange-hover);
+    background-color: var(--background-blue);
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: #fff;
+}
+
+.Header-blur-Menu:hover {
+    background-color: var(--orange-hover);
+    cursor: pointer;
+}
+
+.Header-blur-Reserver:hover {
+    color: var(--orange-hover);
+    cursor: pointer;
+}
+
+
+/*! Partie Description */
+
+
+.block1 {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+}
+
+.img-histoire {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10rem;
+    justify-content: center;
+    padding-top: 8rem;
+}
+
+.block1-img {
+    margin-left: 5%;
+}
+
+.block1-img img {
+    width: auto;
+    max-width: 100%;
+    height: 35rem;
+    margin-top: 190px;
+}
+
+.block1-histoire h2 {
+    color: var(--light);
+    font-family: 'Philosopher', sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.block1-histoire {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.block1-guillement1 {
+    position: relative;
+    font-family: "Montagu Slab";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    transform: scale(-1, -1);
+    height: 80px;
+    top: 20px;
+    right: 40px;
+}
+
+.block1-histoire p {
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block1-guillement2 {
+    font-family: "Montagu Slab";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    height: 80px;
+    margin-left: auto;
+    position: relative;
+    left: 40px;
+    bottom: 20px;
+}
+
+.block1-bouton {
+    height: 50px;
+    width: 271px;
+    border-radius: 12px;
+    background: var(--default);
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block1-bouton:hover {
+    background-color: var(--orange-hover);
+    cursor: pointer;
+}
+
+/*! Fin de Block1 */
+
+/*! Début de Block2 */
+
+.block2 {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+}
+
+.histoire-img {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 10rem;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.block2-histoire h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block2-histoire p {
+    text-align: left;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    margin-top: 5rem;
+}
+
+
+
+.block2-img {
+    margin-left: 5%;
+}
+
+.block2-img img {
+    width: auto;
+    max-width: 100%;
+    height: 35rem;
+    margin-top: 190px;
+}
+
+
+.block2-bouton {
+    height: 50px;
+    width: 220px;
+    border-radius: 12px;
+    background: var(--default);
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--light);
+    margin-top: 2rem;
+}
+
+.block2-bouton:hover {
+    background-color: var(--orange-hover);
+    cursor: pointer;
+}
+
+/*! Fin de Block2 */
+
+/*! Block 3 */
+
+.block3 {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    padding: 5rem;
+}
+
+.block3-titre h2 {
+    color: var(--light);
+    font-family: "Philosopher", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.block3-lpv {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    display: flex;
+    gap: 5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.block3-localisation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block3-localisation img {
+    position: relative;
+    bottom: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+.block3-localisation h3 {
+    color: var(--Light, #FFEDED);
+    font-family: "Philosopher", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    position: relative;
+    bottom: 14px;
+}
+
+.block3-localisation p {
+    color: var(--light);
+    text-align: center;
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+}
+
+.block3-passion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block3-passion img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5%;
+}
+
+.block3-passion h3 {
+    color: var(--Light, #FFEDED);
+    font-family: "Philosopher", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 00;
+    line-height: normal;
+    text-align: center;
+}
+
+.block3-passion p {
+    color: var(--light);
+    text-align: center;
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5%;
+}
+
+.block3-valeur {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.block3-valeur img {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 5%;
+}
+
+.block3-valeur h3 {
+    color: var(--Light, #FFEDED);
+    font-family: "Philosopher", sans-serif;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 00;
+    line-height: normal;
+    text-align: center;
+}
+
+.block3-valeur p {
+    color: var(--light);
+    text-align: center;
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-top: 5%;
+}
+
+.block3-trait {
+    width: 10px;
+    height: 180px;
+    background-color: var(--light);
+    position: relative;
+    top: 14rem;
+}
+
+/*! Block 3 Fin */
+/*! Block4 */
+.block4 {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    padding-top: 12rem;
+}
+
+.block4-titre h2 {
+    color: var(--light);
+    font-family: "Philosopher", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.block4-img-img {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.block4-prive {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+}
+
+.block4-img-img img {
+    width: 100%;
+    max-width: 100%;
+    height: 70rem;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+.block4-blur {
+    position: absolute;
+    width: 35rem;
+    height: 45rem;
+    margin-top: 13rem;
+    border-radius: 24px;
+    background: rgba(11, 28, 44, 0.25);
+    box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12);
+    backdrop-filter: blur(20px);
+    z-index: 3;
+}
+
+.block4-blur-titre {
+    color: var(--light);
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-top: 10%;
+}
+
+.block4-blur-text {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    color: var(--light);
+    font-family: "Montagu Slab";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 4%;
+}
+
+.bxs-star {
+    font-size: 16px;
+    color: var(--light);
+    padding-right: 4px;
+}
+
+.block4-evenement-cat1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 8%;
+}
+
+.block4-evenement-cat1 p {
+    color: var(--light);
+    font-family: "Montagu Slab";
+    margin: 0 auto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: left;
+}
+
+
+.block4-bouton {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 246px;
+    border-radius: 12px;
+    background: var(--default);
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--light);
+    margin-top: 10%;
+}
+
+.block4-bouton:hover {
+    background-color: var(--orange-hover);
+    cursor: pointer;
+}
+
+.block5-even-img-text {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+}
+
+.block5-even-img-text h2 {
+    color: var(--light);
+    text-transform: capitalize;
+    font-family: "Philosopher", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    justify-content: center;
+    display: flex;
+    width: 70%;
+}
+
+.block5-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.block5-description-text {
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+
+.block5-description-titre {
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    margin-bottom: 5%;
+}
+
+.block5-img-desc {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 5%;
+    gap: 10rem;
+}
+
+.block5-card-eve img {
+    width: 22rem;
+    height: auto;
+}
+
+.block5-hdebut-fin {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block5-date {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block5-bouton {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+    width: 246px;
+    border-radius: 12px;
+    background: var(--default);
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block5-bouton:hover {
+    background-color: var(--orange-hover);
+    cursor: pointer;
+}
+
+.block5-date-heure {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    margin-top: 2rem;
+}
+
+.block6-footer {
+    width: 100%;
+    background-color: var(--background-blue);
+    height: auto;
+    padding-top: 10rem;
+}
+
+/* ! Responsive 1200px */
+
+@media screen and (max-width: 1201px) {
+
+    .Page-Accueil {
+        height: 60rem;
+    }
+
+    .Page-Accueil .Header-blur {
+        position: relative;
+        left: 15rem;
+    }
+
+    .Header-contenu img {
+        position: relative;
+        bottom: 55rem;
+        right: 10rem;
+        width: 1200px;
+        max-width: 1200px;
+        height: auto;
+        transform: scale(1.2);
+        z-index: 1;
+    }
+
+    .Header-blur {
+        position: absolute;
+        background: transparent;
+        box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12);
+        backdrop-filter: blur(20px);
+        z-index: 2;
+        right: 85rem;
+    }
+
+    .Header-contenu {
+        background-color: var(--background-blue);
+
+    }
+
+    .img-histoire {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .histoire-img {
+        gap: 6rem;
+    }
+
+    .block3-titre h2 {
+        font-size: 3rem;
+    }
+
+    .block3-lpv {
+        gap: 2rem;
+    }
+
+    .block4-img-img .block4-accueil-img2,
+    .block4-img-img .block4-accueil-img1 {
+        width: 600px;
+        height: auto;
+    }
+
+    .block4-blur {
+        margin-top: 3rem;
+    }
+
+    .block4-img-img {
+        padding-bottom: 5%;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .Page-Accueil {
+        height: 60rem;
+    }
+
+    .Page-Accueil .Header-blur {
+        position: relative;
+        left: 4rem;
+    }
+
+    .Header-contenu img {
+        position: relative;
+        bottom: 55rem;
+        right: 26.5rem;
+        width: 1200px;
+        max-width: 1200px;
+        height: auto;
+        transform: scale(1.2);
+        z-index: 1;
+    }
+
+    .Header-blur {
+        position: absolute;
+        background: transparent;
+        box-shadow: 0px 8px 18px -6px rgba(24, 39, 75, 0.12);
+        backdrop-filter: blur(20px);
+        z-index: 2;
+        right: 85rem;
+    }
+
+    .Header-contenu {
+        background-color: var(--background-blue);
+
+    }
+
+    .img-histoire {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .block1-histoire p {
+        text-align: center;
+    }
+
+    .hd-img {
+        position: relative;
+        right: 0rem;
+    }
+
+    .block1-guillement1 {
+        position: relative;
+        right: 20rem;
+    }
+
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2-histoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .block1-histoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2-img {
+        margin-left: 0%;
+    }
+
+    .block1-img {
+        margin-left: 0%;
+    }
+
+    .histoire-img {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .block3-titre h2 {
+        font-size: 2.5rem;
+    }
+
+    .block3-lpv {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .block3-trait {
+        display: none;
+    }
+
+    .block3-passion img {
+        margin-bottom: 0;
+    }
+
+    .block3-valeur img {
+        margin-bottom: 0;
+    }
+
+    .block4-img-img .block4-accueil-img2,
+    .block4-img-img .block4-accueil-img1 {
+        display: none;
+    }
+
+    .block4-blur {
+        margin-top: 3rem;
+        position: relative;
+
+    }
+
+    .block4-img-img {
+        padding-bottom: 10%;
+    }
+
+    .block5-even-img-text h2 {
+        width: 100%;
+    }
+
+    .block5-img-desc {
+        gap: 5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Page-Accueil{
+        width: 100%;
+    }
+
+    .Page-Accueil .Header-blur {
+        position: relative;
+        left: -1rem;
+    }
+
+    .Header-contenu img {
+        position: relative;
+        bottom: 55rem;
+        right: 40rem;
+        width: 1200px;
+        max-width: 1200px;
+        height: auto;
+        transform: scale(1.2);
+        z-index: 1;
+    }
+
+    .Header-blur {
+        position: absolute;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        z-index: 2;
+    }
+
+    .Header-contenu {
+        background-color: var(--background-blue);
+        width: 100%;
+    }
+
+    .img-histoire {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .block1-histoire p {
+        text-align: center;
+    }
+
+    .hd-img {
+        position: relative;
+        right: 0rem;
+    }
+
+    .block1-guillement1 {
+        position: relative;
+        right: 20rem;
+    }
+
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2-histoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .block1-histoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2-img {
+        margin-left: 0%;
+    }
+
+    .block1-img {
+        margin-left: 0%;
+    }
+
+    .histoire-img {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .block3-titre h2 {
+        font-size: 2.5rem;
+    }
+
+    .block3-lpv {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .block3-trait {
+        display: none;
+    }
+
+    .block3-passion img {
+        margin-bottom: 0;
+    }
+
+    .block3-valeur img {
+        margin-bottom: 0;
+    }
+
+    .block4-img-img .block4-accueil-img2,
+    .block4-img-img .block4-accueil-img1 {
+        display: none;
+    }
+
+    .block4-blur {
+        margin-top: 3rem;
+        position: relative;
+
+    }
+
+    .block4-img-img {
+        padding-bottom: 10%;
+    }
+
+    .block5-even-img-text h2 {
+        width: 100%;
+    }
+
+    .block5-img-desc {
+        gap: 5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 480px) {
+    
+    .Page-Accueil .Header-blur {
+        position: relative;
+        left: -19.5rem;
+    }
+    .Header-blur-h1-text h1{
+        position: relative;
+        text-align: left;
+        font-size: 6rem;
+        left: 9rem;
+    }
+    .Header-blur-h1-text p{
+        position: relative;
+        left: 9rem;
+        font-size: 0.8rem;
+    }
+    .Header-blur-boutons{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        align-items: center;
+        margin-top: 10%;
+    }
+
+    .Header-contenu img {
+        position: relative;
+        bottom: 52.8rem;
+        right: 50.5rem;
+        width: 73rem;
+        max-width: 1200px;
+        height: auto;
+        transform: scale(1.2);
+        z-index: 1;
+    }
+
+    .Header-blur {
+        position: absolute;
+        background: transparent;
+        backdrop-filter: blur(20px);
+        z-index: 2;
+    }
+
+    .Header-contenu {
+        background-color: var(--background-blue);
+        width: 100%;
+    }
+
+    .img-histoire {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding-top: 2rem;
+    }
+
+    .block1-histoire p {
+        text-align: center;
+        font-size: 1rem;
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+    }
+
+    .hd-img {
+        position: relative;
+        transform: scale(1);
+    }
+
+    .block1-guillement1, .block1-guillement2 {
+        display: none;
+    }
+
+    .block1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2-histoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .block2-histoire h2{
+        font-size: 3.5rem;
+    }
+    .block2-histoire p{
+        font-size: 1.1rem;
+    }
+
+    .block1-histoire {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .block2-img {
+        margin-left: 0%;
+    }
+
+    .block1-img {
+        margin-left: 0%;
+        position: relative;
+        bottom: 0px;
+        height: 40rem;
+    }
+
+    .histoire-img {
+        display: flex;
+        flex-wrap: wrap-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .block4-titre h2 {
+        font-size: 3.5rem;
+    }
+
+    .block3-titre h2 {
+        font-size: 2.5rem;
+        width: 23rem;
+    }
+
+    .block3-lpv {
+        display: flex;
+        flex-direction: column;
+        gap: 5rem;
+    }
+
+    .block3-trait {
+        display: none;
+    }
+
+    .block3-passion img {
+        margin-bottom: 0;
+    }
+
+    .block3-valeur img {
+        margin-bottom: 0;
+    }
+    .block4{
+        padding-top: 8rem;
+    }
+
+    .block4-img-img .block4-accueil-img2,
+    .block4-img-img .block4-accueil-img1 {
+        display: none;
+    }
+
+    .block4-blur {
+        margin-top: 3rem;
+        position: relative;
+        background-color: var(--mirror);
+    }
+
+    .block4-img-img {
+        padding-bottom: 10%;
+    }
+
+    .block5-even-img-text h2 {
+        width: 100%;
+        font-size: 3rem;
+    }
+
+    .block5-img-desc {
+        gap: 5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

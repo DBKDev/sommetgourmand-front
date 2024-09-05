@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+.block1-contact {
+    width: 100%;
+    height: 700px;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.block1-contact h1 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    z-index: 3;
+    position: absolute;
+}
+
+.block2-contact {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.block1-contact img {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+    top: 1rem;
+    flex-shrink: 0;
+    transform: scale(1);
+}
+
+.block2-contact-contact {
+    width: 383px;
+    height: 562px;
+    background-color: var(--background-conteneur);
+    border-radius: 30px 0px 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.block2-contact-contact1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block2-contact-contact1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.block2-contact-contact1 p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--mirror);
+}
+
+.block2-contact-contact2 p {
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--mirror);
+}
+
+.block2-contact-formulaire {
+    width: 664px;
+    height: 688px;
+    background-color: var(--mirror);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+
+.block2-contact-formulaire-contour {
+    border-radius: 30px;
+    border: 2px solid var(--orange-hover);
+    width: 620px;
+    height: 642px;
+}
+
+.activeform {
+    color: var(--orange-hover) !important;
+}
+
+.block2-contact-formulaire1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+    gap: 5rem;
+}
+
+.block2-contact-formulaire1 p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--light);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.block2-contact-formulaire2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2%;
+}
+
+.block2-contact-formulaire2 h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block2-contact-formulaire2 p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--light);
+}
+
+.block2-contact-formulaire3 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+}
+
+.block2-contact-formulaire3-2,
+.block2-contact-formulaire3-1,
+.block2-contact-formulaire3-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.block2-contact-formulaire3-2 label,
+.block2-contact-formulaire3-1 label,
+.block2-contact-formulaire3-3 label {
+    font-family: "Philosopher", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block2-contact-formulaire3-1 input {
+    width: 140px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.block2-contact-formulaire3-2 input {
+    width: 140px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.block2-contact-formulaire3-3 input {
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.block2-contact-formulaire4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 1rem;
+}
+
+.block2-contact-formulaire4-1,
+.block2-contact-formulaire4-2,
+.block2-contact-formulaire4-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block2-contact-formulaire4-1 label,
+.block2-contact-formulaire4-2 label,
+.block2-contact-formulaire4-3 label {
+    color: var(--light);
+    font-family: "Philosopher", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.block2-contact-formulaire4-1 input,
+.block2-contact-formulaire4-2 input,
+.block2-contact-formulaire4-3 input {
+    width: 476px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0px 15px;
+    font-family: "Montagu Slab", sans-serif;
+    font-weight: 500;
+}
+
+.block2-contact-formulaire4-4 {
+    width: 230px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid var(--orange-hover);
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    margin-top: 0.5rem;
+    transition: 0.1s ease-in-out;
+    margin-bottom: 1rem;
+}
+
+.block2-contact-formulaire4-4:hover {
+    cursor: pointer;
+    color: var(--orange-hover);
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+/*! Formulaire Deux */
+
+.block3-contact-formulaire1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 5rem;
+    align-items: center;
+    gap: 5rem;
+}
+
+.block3-contact-formulaire1 p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--light);
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.block3-contact-formulaire2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2%;
+}
+
+.block3-contact-formulaire2 h2 {
+    font-family: "Philosopher", sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block3-contact-formulaire2 p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--light);
+}
+
+.block3-contact-formulaire3 {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-self: center;
+    margin-top: 3%;
+}
+
+.block3-contact-formulaire3-2,
+.block3-contact-formulaire3-1,
+.block3-contact-formulaire3-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+
+.block3-contact-formulaire3-2 label,
+.block3-contact-formulaire3-1 label,
+.block3-contact-formulaire3-3 label {
+    font-family: "Philosopher", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block3-contact-formulaire3-1 input {
+    width: 140px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.block3-contact-formulaire3-2 input {
+    width: 140px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.block3-contact-formulaire3-3 input {
+    width: 70px;
+    height: 50px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.block3-contact-formulaire4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+    gap: 1rem;
+}
+
+.block3-contact-formulaire4-1,
+.block3-contact-formulaire4-2,
+.block3-contact-formulaire4-3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.block3-contact-formulaire4-1 label,
+.block3-contact-formulaire4-2 label,
+.block3-contact-formulaire4-3 label {
+    color: var(--light);
+    font-family: "Philosopher", sans-serif;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+.block3-contact-formulaire4-2 input,
+.block3-contact-formulaire4-3 input {
+    width: 476px;
+    height: 50px;
+    border-radius: 8px;
+    padding: 0px 15px;
+    font-family: "Montagu Slab", sans-serif;
+    font-weight: 500;
+}
+
+.block3-contact-formulaire4-1 textarea {
+    width: 476px;
+    height: 100px;
+    border-radius: 8px;
+    max-width: 476px;
+    max-height: 130px;
+    padding: 15px 15px;
+    font-family: "Montagu Slab", sans-serif;
+    font-weight: 500;
+}
+
+.block3-contact-formulaire4-4 {
+    width: 230px;
+    height: 50px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px solid var(--orange-hover);
+    font-family: "Montagu Slab", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    margin-top: 0.5rem;
+    transition: 0.1s ease-in-out;
+}
+
+.block3-contact-formulaire4-4:hover {
+    cursor: pointer;
+    color: var(--orange-hover);
+    transform: scale(1.1);
+    transition: 0.1s ease-in-out;
+}
+
+
+
+.block2-contact-horaire {
+    width: 383px;
+    height: 562px;
+    border-radius: 0px 30px 30px 0px;
+    background: var(--background-conteneur);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+}
+
+.block2-horaire-horaire1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.block2-horaire-horaire1 img {
+    width: 100px;
+    height: 100px;
+}
+
+.block2-horaire-horaire1 p {
+    font-family: "Philosopher", sans-serif;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--mirror);
+}
+
+.block2-horaire-horaire2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.block2-horaire-horaire2 p {
+    font-family: "Montagu Slab";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--mirror);
+}
+
+.block2-horaire-horaire3 {
+    font-family: "Montagu Slab";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--mirror);
+}
+
+.block2-horaire-horaire4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.block2-horaire-horaire4 p {
+    font-family: "Montagu Slab";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--mirror);
+}
+
+.block2-contact-content {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+    overflow: hidden;
+    transition: 1s ease-in-out;
+}
+
+.block2-contact-form1 {
+    position: relative;
+    right: 35rem;
+    transition: 1s ease-in-out;
+}
+
+.block2-contact-form2 {
+    position: relative;
+    left: 2rem;
+    transition: 1s ease-in-out;
+}
+
+.block2-contact-form2-active {
+    position: relative;
+    right: 92%;
+    transition: 1s ease-in-out;
+}
+
+.block2-contact-form1-active {
+    position: relative;
+    left: 12%;
+    transition: 1s ease-in-out;
+}
+
+@media screen and (max-width: 1201px) {
+    .block2-contact-formulaire-contour{
+        width: 500px;
+    }
+    .block2-contact-form2-active {
+        right: 39.1rem;
+    }
+    .block2-contact-form1-active {
+        left: 2%;
+    }
+}
+
+@media screen and (max-width: 901px) {
+    .block1-contact {
+        height: 230px;
+    }
+
+    .block2-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block2-contact-contact {
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .block2-contact-horaire {
+        border-radius: 0px 0px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .block1-contact {
+        height: 230px;
+    }
+
+    .block2-contact {
+        display: flex;
+        flex-direction: column;
+    }
+    .block2-contact-formulaire-contour{
+        width: 90%;
+    }
+    .block2-contact-form2-active {
+        right: 36rem;
+    }
+    .block2-contact-form1-active {
+        left: 10%;
+    }
+
+    .block2-contact-contact {
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .block2-contact-horaire {
+        border-radius: 0px 0px 30px 30px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .block1-contact {
+        height: 230px;
+    }
+
+    .block2-contact {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block2-contact-contact {
+        border-radius: 30px 30px 0px 0px;
+    }
+
+    .block2-contact-horaire {
+        border-radius: 0px 0px 30px 30px;
+    }
+
+    .block2-contact-formulaire {
+        width: 100%;
+    }
+
+    .block2-contact-formulaire-contour {
+        width: 90%;
+    }
+
+    .block2-contact-form1-active {
+        left: 5%;
+    }
+
+    .block2-contact-formulaire4-1 input,
+    .block2-contact-formulaire4-2 input,
+    .block2-contact-formulaire4-3 input {
+        width: 350px;
+    }
+
+    .block2-contact-formulaire3 {
+        gap: 1rem;
+    }
+
+    .block2-contact-form2-active {
+        right: 31.5rem;
+    }
+
+    .block3-contact-formulaire4-2 input,
+    .block3-contact-formulaire4-3 input {
+        width: 350px;
+    }
+
+    .block3-contact-formulaire4-1 textarea {
+        width: 350px;
+    }
+
+}

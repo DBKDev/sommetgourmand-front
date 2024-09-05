@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  outline: none;
+  border: none;
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+
+
+:root {
+  --background-dahsboard: #dde6ed;
+  --background-blue: #0B2239;
+  --background-conteneur: #fff;
+  --light: #FFEDED;
+  --default: #CC5B41;
+  --orange-hover: #FF7251;
+  --mirror: #0B1C2C;
+}
+
+
+.Table-Plat {
+  display: grid;
+  height: auto;
+  grid-template-columns:
+    minmax(50px, 1fr) minmax(180px, 3.33fr) minmax(300px, 3.33fr) minmax(70px, 1fr) minmax(180px, 2fr) minmax(80px, 1.67fr) minmax(80px, 1fr) minmax(70px, 1fr);
+}
+
+thead,
+tbody,
+tr {
+  display: contents;  
+}
+
+th,
+.td-class {
+  padding: 15px;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+th {
+  background: var(--background-blue);
+  text-align: center;
+  font-weight: normal;
+  font-size: 1.1rem;
+  color: white;
+  position: relative;
+}
+
+th:last-child {
+  border: 0;
+}
+
+
+.td-class {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #808080;
+  text-align: center;
+}
+
+tr:nth-child(even) .td-class {
+  background: #f8f6ff;
+}
+
+.db-evenement .Table-Plat {
+  position: relative;
+  bottom: 50px;
+}
+
+.bx-edit {
+  color: green;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.croix-plat {
+  color: red;
+  font-size: 1.6rem;
+  cursor: pointer;
+}
+
+.bx-edit:hover{
+  scale: 1.2;
+}
+.bx-x:hover{
+  scale: 1.2;
+}
+
+.td-button {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  top: 0.6rem;
+  gap: 0.6rem;
+  background: transparent;
+}
+
+.button-add-menu{
+  border-radius: 40px;
+  width: 10rem;
+  height: 2.5rem;
+  font-size: 1.2rem;
+  background: var(--background-blue);
+  color: var(--light);
+  font-family: 'Montagu Slab',sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.add-menu{
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-top: 3%;
+  margin-left: 18rem;
+}
+
+.button-add-menu:hover{
+  border: 2px solid var(--orange-hover);
+  border-radius: 40px;
+  color: var(--orange-hover);
+}
+
+.button-add-menu a{
+  color: var(--light);
+}

@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+.header-connection{
+    background-color: var(--background-blue);
+}
+
+.Connexion-general {
+    height: 90vh;
+    width: 100%;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Formulaire-connexion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30rem;
+    height: 36rem;
+    background: var(--mirror);
+    border-radius: 30px;
+    color: var(--light);
+}
+
+.Interieur-formulaire {
+    width: 26rem;
+    height: 32rem;
+    border: 2px solid var(--orange-hover);
+    border-radius: 30px;
+}
+
+.Interieur-formulaire h2 {
+    display: flex;
+    justify-content: center;
+    font-family: Philosopher;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 10%;
+}
+
+.Interieur-formulaire label {
+    font-family: Philosopher;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2%;
+    margin-top: 2%;
+}
+
+.Interieur-formulaire input {
+    height: 50px;
+    border-radius: 8px;
+    width: 80%;
+    display: flex;
+    padding: 10px;
+    font-family: "Montagu Slab";
+    font-weight: 500;
+    color: var(--mirror);
+}
+
+.Interieur-formulaire form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5%;
+}
+
+.Interieur-formulaire form button{
+    width: 10rem;
+    height: 50px;
+    border-radius: 50px;
+    margin-top: 10%;
+    background-color: transparent;
+    border: 2px solid var(--orange-hover);
+    font-family: "Montagu Slab";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    margin-bottom: 8%;
+}
+
+.Interieur-formulaire form button:hover{
+    color: var(--orange-hover);
+    cursor: pointer;
+}

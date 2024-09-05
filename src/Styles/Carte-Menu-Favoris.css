@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+.arriere-plan-carte {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6rem;
+}
+
+
+.carte-menu {
+    width: 313px;
+    height: 483px;
+    border-radius: 24px;
+    background-color: var(--mirror);
+}
+
+.carte-menu:hover {
+    background: var(--card-2, linear-gradient(180deg, rgba(11, 28, 44, 0.20) 0%, rgba(255, 114, 81, 0.30) 50.5%, rgba(11, 28, 44, 0.33) 100%));
+}
+
+.carte-menu-titre {
+    font-family: "Montagu Slab";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    color: var(--light);
+    line-height: normal;
+    height: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.carte-menu-titre-coeur {
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    gap: 15px;
+}
+
+
+.arriere-plan-coeur {
+    width: 45px;
+    height: 45px;
+    background-color: #787F89;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carte-menu-coeur {
+    width: auto;
+    height: 30px;
+    margin-top: 5%;
+}
+
+.carte-menu-img {
+    display: flex;
+    justify-content: center;
+}
+
+.carte-menu-img img {
+    width: 22rem;
+    height: auto;
+    position: relative;
+    bottom: 2.5rem;
+    transition: 0.5s ease-in-out;
+}
+
+.carte-menu-img img:hover {
+    transform: scale(1.07);
+    transition: 0.5s ease-in-out;
+}
+
+.carte-menu-description {
+    font-family: "Montagu Slab";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    color: var(--light, #FFEDED);
+    position: relative;
+    bottom: 5rem;
+    text-align: left;
+    padding: 9px 20px;
+    max-height: 5px;
+}
+
+.carte-menu-prix {
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--light);
+    text-align: center;
+}
+
+.carte-menu-total {
+    font-family: "Montagu Slab";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--light);
+    text-align: center;
+}
+
+.carte-menu-prix-total {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    bottom: 2rem;
+    padding: 0 20px;
+}

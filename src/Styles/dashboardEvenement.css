@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+
+
+.db-contenu-evenement {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5rem;
+    position: relative;
+    top: 40px;
+}
+
+
+.db-evenement {
+    width: 65rem;
+    height: 50rem;
+    background-color: var(--background-conteneur);
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    justify-content: space-evenly;
+    column-count: 3;
+    flex-wrap: wrap;
+    padding: 50px 0px;
+    overflow: hidden;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.db-message {
+    width: 30rem;
+    height: 50rem;
+    background-color: var(--background-conteneur);
+    border-radius: 16px;
+    /* overflow: hidden; */
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.message-gestion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.message {
+    height: 10rem;
+    background-color: var(--background-blue);
+    border-radius: 12px;
+    width: 100%;
+    padding: 0px 20px;
+    color: var(--background-conteneur);
+}
+
+
+.info-message-title {
+    text-transform: capitalize;
+    font-family: "Montagu Slab", serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.info-message-mail {
+    font-family: "Montagu Slab", serif;
+    font-weight: 200;
+    font-size: 0.8rem;
+    color: var(--light);
+}
+
+.info-message-message {
+    font-family: "Montagu Slab", serif;
+    margin-top: 0.5rem;
+    font-weight: 300;
+    color: var(--light);
+    font-size: 0.8rem;
+}
+
+.db-img-event {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 200px;
+    height: auto;
+    /* margin-bottom: -4rem; */
+}
+
+.db-card-event {
+    opacity: 1;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    
+}
+
+.db-card-event:hover .db-img-event {
+    opacity: 0.3
+}
+
+.db-card-event:hover .button-event {
+    opacity: 1;
+}
+
+
+.button-event {
+    position: relative;
+    bottom: 14rem;
+    margin-bottom: -5rem;
+    transition: .5s ease;
+    opacity: 0;
+    text-align: center;
+}
+
+
+.button-edit {
+    background-color: var(--background-blue);
+    border: 1px solid var(--orange-hover);
+    border-radius: 12px;
+    color: white;
+    font-size: 1.3rem;
+    margin: auto;
+    width: 90%;
+    height: 30px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.button-edit:hover {
+    color: var(--orange-hover);
+}
+
+.button-add-evenement{
+    border-radius: 40px;
+    width: 10rem;
+    height: 2.5rem;
+    font-size: 1.2rem;
+    background: var(--background-blue);
+    color: var(--light);
+    font-family: 'Montagu Slab',sans-serif;
+    font-weight: 400;
+    cursor: pointer;
+  }
+
+  .button-add-evenement a{
+    color: var(--light);
+  }
+  
+  .add-evenement{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 3%;
+    margin-left: 18rem;
+  }
+  
+  .button-add-evenement:hover{
+    border: 2px solid var(--orange-hover);
+    border-radius: 40px;
+    color: var(--orange-hover);
+  }
+
+ .message-croix{
+    position: relative;
+    right: 1.2rem;
+    top: 0.2rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+ }

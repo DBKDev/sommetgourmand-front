@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:opsz,wght@16..144,100..700&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    border: none;
+    scroll-behavior: smooth;
+    user-select: none;
+}
+
+html::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background: var(--background-blue);
+    border-radius: 3rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: var(--mirror);
+}
+
+:root {
+    --background-dahsboard: #dde6ed;
+    --background-blue: #0B2239;
+    --background-conteneur: #fff;
+    --light: #FFEDED;
+    --default: #CC5B41;
+    --orange-hover: #FF7251;
+    --mirror: #0B1C2C;
+}
+
+.block1-evenement {
+    width: 100%;
+    height: 350px;
+    background-color: var(--background-blue);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.block1-evenement h1 {
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+    color: var(--light);
+
+}
+
+.evenement-slider {
+    width: 100%;
+    height: 20rem;
+    background-color: var(--mirror);
+}
+
+.block1-evenement-carte {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-end;
+}
+
+.block1-evenement-carte {
+    display: flex;
+    flex-direction: row;
+    gap: 10rem;
+}
+
+.block1-evenement-carte img {
+    width: auto;
+    height: 564px;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: var(--mirror);
+    margin: auto;
+    padding: 120px;
+}
+
+.block1-evenement-heure {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block1-evenement-date {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block1-evenement-description {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.block1-evenement-description-titre {
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 34px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+    margin-bottom: 5%;
+}
+
+.block1-evenement-description-text {
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block1-evenement-date-heure {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.block2-evenement {
+    width: 100%;
+    height: auto;
+    background-color: var(--background-blue);
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.block2-evenement p {
+    text-align: center;
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--light);
+}
+
+.block2-evenement b {
+    color: var(--default);
+    font-family: "Montagu Slab";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.block2-evenement b:hover{
+    color: var(--orange-hover);
+}
+
+@media screen and (max-width: 901px) {
+    .block1-evenement-carte{
+        gap: 1rem;
+    }
+}
+@media screen and (max-width: 768px) {
+    .block1-evenement-carte{
+        gap: 3rem;
+    }
+    .block1-evenement-carte{
+        display: flex;
+        flex-direction: column;
+    }
+    .swiper-wrapper{
+        background-color: var(--mirror);
+    }
+}
+@media screen and (max-width: 480px) {
+    .block1-evenement-carte{
+        display: flex;
+        flex-direction: column;
+    }
+    .block1-evenement-description-text {
+        font-family: "Montagu Slab";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        color: var(--light);
+        padding: 1rem;
+        text-align: center;
+    }
+    .swiper-horizontal{
+        background-color: var(--mirror);
+    }
+    .block2-evenement p{
+        text-align:center;
+    }
+}
